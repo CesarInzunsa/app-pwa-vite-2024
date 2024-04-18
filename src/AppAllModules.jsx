@@ -1,8 +1,8 @@
 import {RouterProvider} from "react-router-dom";
 // Routes
 import router from "./navigation/NaviRoutesSecurity";
-//import  router from "./navigation/NaviRoutesEducation";
-//import  router from "./navigation/NaviRoutesCommerce";
+//import router from "./navigation/NaviRoutesEducation";
+//import router from "./navigation/NaviRoutesCommerce";
 import Footer from "./share/footer/components/Footer";
 
 export default function AppAllModules() {

@@ -1,7 +1,24 @@
-export default function Institutes() {
+import {Box} from "@mui/material";
+import {useState} from "react";
+import InstitutesNavTab from "../components/tabs/InstitutesNavTab";
+import InstitutesTab from "../components/tabs/InstitutesTab.jsx";
+import BusinessTab from "../components/tabs/BusinessTab.jsx";
+
+const Institutes = () => {
+
+    const [currentRowInInstitutesTab, setCurrentRowInInstitutesTab] = useState(0);
+    const [currentNameTabInPrincipalTab, setCurrentNameTabInPrincipalTab] = useState("INSTITUTOS");
+
     return (
-        <div id={"div-module"}>
-            <h2>Institutes Catalog - Business </h2>
-        </div>
+        <Box>
+            <InstitutesNavTab
+                setCurrentRowInInstitutesTab={setCurrentRowInInstitutesTab}
+                setCurrentNameTabInPrincipalTab={setCurrentNameTabInPrincipalTab}
+            />
+
+            {currentNameTabInPrincipalTab == "INSTITUTOS" && <InstitutesTab/>}
+            {currentNameTabInPrincipalTab == "NEGOCIOS" && <BusinessTab/>}
+        </Box>
     );
-}
+};
+export default Institutes;
