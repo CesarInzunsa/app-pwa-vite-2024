@@ -23,10 +23,6 @@ export default function BusinessTab() {
                 setCurrentNameTabInBusinessTab={setCurrentNameTabInBusinessTab}
             />
 
-            {/* <h2>Tab con la tabla del subdocumento de Negocios de la coleccion de Institutos</h2>
-            <h2>Este debera abrir otro NAVTAB DE NEGOCIOS porque tiene subdocumentos no es un objeto final</h2> */}
-
-            {console.log(currentNameTabInBusinessTab)}
             {/* {currentNameTabInBusinessTab == "NEGOCIOS" && <BusinessTab />} */}
 
             {/*{currentNameTabInBusinessTab == "INFO ADICIONAL" && <InfoAdTab/>}*/}
